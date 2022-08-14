@@ -1,4 +1,4 @@
-# day
+一个go版时间格式转换封装
 安装: go get "github.com/ooodjc/day"
 ```
 func main() {
