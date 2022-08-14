@@ -10,10 +10,11 @@ type Day struct {
 }
 
 func (d Day) New(t time.Time) Day {
-	return Day{
+	d = Day{
 		Time:   t,
 		Format: "2006-01-02 15:04:05",
 	}
+	return d
 }
 
 //set time time.Time
