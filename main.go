@@ -53,8 +53,8 @@ func (d Day) StringToTime(s string) time.Time {
 
 //string time to int time
 func (d Day) StringToInt(s string) int {
-	d.Time = d.StringToTime(s)
-	return d.TimeToInt()
+	t, _ := time.Parse(d.Format, s)
+	return int(t.Unix())
 }
 
 //int time to time.Time
